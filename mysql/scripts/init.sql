@@ -1,0 +1,3 @@
+CREATE DATABASE IF NOT EXISTS desafio_node;
+USE desafio_node;
+CREATE TABLE IF NOT EXISTS people(name VARCHAR(256));
