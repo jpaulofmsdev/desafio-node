@@ -20,7 +20,7 @@ app.get('/', (req,res) => {
     })
     connection.query('SELECT * FROM people', (error, results, fields) => {
         const result = results.reduce((prev, curr) => `${prev}<br>-${curr.name}`, '')
-        res.send(`<h1>Full Cycle</h1>${result}`)
+        res.send(`<h1>Full Cycle Rocks!</h1>${result}`)
     })
 })
 
