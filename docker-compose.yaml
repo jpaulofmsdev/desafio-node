@@ -20,6 +20,8 @@ services:
     container_name: desafio-node_nginx
     ports:
       - "8080:80"
+    depends_on: 
+       - desafio-node_app
     networks: 
       - desafio-node_network
 
